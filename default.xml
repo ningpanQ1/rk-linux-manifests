@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote fetch="https://github.com/edgehook/" name="edgehook">
+	</remote>
+	<remote fetch="https://github.com/Fruit-Pi/" name="Fruit-Pi">
+	</remote>
+
+	<project remote="edgehook" name="rk-uboot" path="u-boot"  revision="next-dev">
+	</project>
+	<project remote="edgehook" name="rk-kernel" path="kernel" revision="develop-5.10">
+	</project>
+	<project remote="edgehook" name="rk-debian" path="debian" revision="stable-debian-bullseye">
+		<linkfile src="mk-debian.sh" dest="mk-debian.sh">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-ubuntu" path="ubuntu" revision="ubuntu20.04">
+		<linkfile src="mk-ubuntu.sh" dest="mk-ubuntu.sh">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-device" path="device/rockchip" revision="master">
+		<linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh">
+		</linkfile>
+		<linkfile src="common/build.sh" dest="build.sh">
+		</linkfile>
+		<linkfile src="rk3399/BoardConfig-rk3399-rsb4710a2.mk" dest="device/rockchip/.BoardConfig.mk">
+		</linkfile>
+		<linkfile src="rk3399" dest="device/rockchip/.target_product">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-buildroot" path="buildroot" revision="rockchip/2018.02-rc3">
+		<linkfile src="build/envsetup.sh" dest="envsetup.sh">
+		</linkfile>
+		<linkfile src="build/Makefile" dest="Makefile">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-external" path="external" revision="master">
+	</project>
+	<project remote="edgehook" name="rk-app" path="app" revision="master">
+	</project>
+	<project remote="Fruit-Pi" name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="master">
+	</project>
+	<project remote="Fruit-Pi" name="tools" path="tools" revision="master">
+	</project>
+	<project remote="Fruit-Pi" name="rkbin" path="rkbin" revision="master">
+	</project>
+</manifest>
