@@ -9,7 +9,7 @@
 	</project>
 	<project remote="edgehook" name="rk-kernel" path="kernel" revision="5dcb6c072eefc34c90e48f843efd1f5f47e6ab2a" upstream="develop-5.10">
 	</project>
-	<project remote="edgehook" name="rk-ubuntu" path="ubuntu" revision="67ea62b15d5d50e6c2dda3036496e88b202c6787" upstream="ubuntu20.04">
+	<project remote="edgehook" name="rk-ubuntu" path="ubuntu" revision="b816353ba16495d5baa2c0bf2df8a7baf6779959" upstream="ubuntu20.04">
 		<linkfile src="mk-ubuntu.sh" dest="mk-ubuntu.sh">
 		</linkfile>
 	</project>
@@ -39,8 +39,8 @@
 	</project>
 	<project remote="Fruit-Pi" name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master">
 	</project>
-	<project remote="Fruit-Pi" name="tools" path="tools" revision="7d17b6cad19bf994040c646acafc3a018efebb99" upstream="master">
+	<project remote="Fruit-Pi" name="tools" path="tools" revision="37d2355d3e5b38d62ddb33a3ebcd5f95c197024f" upstream="master">
 	</project>
-	<project remote="Fruit-Pi" name="rkbin" path="rkbin" revision="efe862271721338029870ee9a199568e8a555d6c" upstream="master">
+	<project remote="Fruit-Pi" name="rkbin" path="rkbin" revision="31e6e275379e6011ae2ce4c262cb36e0158bf3c4" upstream="master">
 	</project>
 </manifest>
