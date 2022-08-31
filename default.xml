@@ -1,1 +1,5 @@
-adv-rk3399-rsb4710a2-1.0.0.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<include name="adv-rk3399-rsb4710a2-1.0.0.xml">
+	</include>
+</manifest>
